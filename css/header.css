@@ -1,0 +1,26 @@
+/* Estilos específicos para el Header */
+#mainHeader {
+    background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco con ligera transparencia */
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+/* Clase que se añade con JS al hacer scroll */
+#mainHeader.scrolled {
+    background-color: var(--color-primary); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mainHeader.scrolled .navbar-brand,
+#mainHeader.scrolled .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.nav-link {
+    font-weight: 500;
+}

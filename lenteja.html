@@ -1,0 +1,94 @@
+<div class="container my-5">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Granos y Legumbres</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Lentejas Orgánicas</li>
+        </ol>
+    </nav>
+
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="position-relative">
+                <div class="badge bg-success position-absolute top-0 end-0 m-3">Orgánico Certificado</div>
+                <div class="product-gallery">
+                    <img src="img/producto_lentejas.jpg"  width="500" height="500"  alt="Lentejas Orgánicas">
+                    <div class="d-flex mt-3 gap-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-6">
+            <div class="product-info">
+                <h1 class="display-5 fw-bold mb-3">Lentejas Orgánicas Premium 🌱</h1>
+                <div class="d-flex align-items-center mb-3">
+                    <p class="h2 text-success fw-bold mb-0">$2.80</p>
+                    <span class="text-muted ms-2">/ bolsa</span>
+                    <div class="ms-auto">
+                        <span class="badge bg-warning">⭐ 4.9/5</span>
+                        <a href="#reviews" class="text-decoration-none ms-2">(156 reseñas)</a>
+                    </div>
+                </div>
+
+                <p class="lead mb-4">Lentejas orgánicas de alta calidad, ricas en proteínas y perfectas para una alimentación saludable.</p>
+                
+                <div class="card bg-light p-3 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <label for="cantidad" class="form-label mb-0 me-3">Cantidad:</label>
+                        <div class="input-group w-50">
+                            <button class="btn btn-outline-secondary" type="button" id="decrementBtn">-</button>
+                            <input type="number" id="cantidad" class="form-control text-center" value="1" min="1">
+                            <button class="btn btn-outline-secondary" type="button" id="incrementBtn">+</button>
+                        </div>
+                    </div>
+                    <button class="btn btn-success btn-lg w-100 d-flex align-items-center justify-content-center gap-2">
+                        <i class="bi bi-cart-plus"></i>
+                        Añadir al Carrito
+                    </button>
+                </div>
+
+                <div class="tab-content p-4 border rounded-3">
+                    <div class="tab-pane fade show active" id="desc-tab">
+                        <h5 class="mb-3">Descripción del Producto</h5>
+                        <p>Nuestras lentejas orgánicas son seleccionadas cuidadosamente para garantizar la mejor calidad. Son una excelente fuente de proteínas vegetales y fibra.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>100% Orgánico Certificado</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Alto Contenido Proteico</li>
+                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sin Conservantes</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="info-tab">
+                        <h5 class="mb-3">Valores Nutricionales</h5>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr><td>Calorías</td><td>230 kcal</td></tr>
+                                <tr><td>Proteínas</td><td>18g</td></tr>
+                                <tr><td>Carbohidratos</td><td>40g</td></tr>
+                                <tr><td>Fibra</td><td>15g</td></tr>
+                                <tr><td>Hierro</td><td>6.6mg</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<style>
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.product-gallery img.img-thumbnail:hover {
+    border-color: #198754;
+}
+</style> 

@@ -1,0 +1,56 @@
+/* Paleta de Colores: Verde (Orgánico), Marrón (Tierra), Blanco/Gris Claro */
+:root {
+    --color-primary: #4CAF50; /* Verde Orgánico */
+    --color-secondary: #8BC34A; /* Verde Claro */
+    --color-text: #333;
+    --color-light: #f8f9fa;
+    --color-dark: #212529;
+}
+
+/* Estilos de Reinicio Básico y Tipografía */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: white;
+    padding-top: 56px; /* Para compensar el fixed-top header */
+}
+
+/* Estilos para enlaces y botones generales */
+.btn-success {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-success:hover {
+    background-color: #43A047;
+    border-color: #43A047;
+}
+
+/* Estilos para el Producto Destacado */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Media Query para responsividad de fuente en dispositivos pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
